@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "orE/ibEzN80ibmNJKpcA8JTOMrlnng1rH3D8zCd8JNJQVpKWBeyvMYEC0F+0kK2Pcn+N4fBd3WTfSrTk1JGN7A==",
+  "success": true,
+  "projectFilePath": "/Users/armen/Desktop/Seneca Fall 2022/DPS926/Visual Studio/UtilityBills-Armen/UtilityBills-Armen/UtilityBills-Armen/UtilityBills-Armen.csproj",
+  "expectedPackageFiles": [
+    "/Users/armen/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/armen/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/armen/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/armen/.nuget/packages/xamarin.essentials/1.7.0/xamarin.essentials.1.7.0.nupkg.sha512",
+    "/Users/armen/.nuget/packages/xamarin.forms/5.0.0.2196/xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

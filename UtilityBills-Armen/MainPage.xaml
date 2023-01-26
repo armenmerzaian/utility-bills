@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UtilityBills_Armen.MainPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="Utility Bill Calculator" FontSize="32" HorizontalOptions="Center" Margin="0,0,0,20"/>
+        <Label Text="Choose Your Provice" />
+        <Picker x:Name="pkr_Province" Title="Select your provice..." SelectedIndexChanged="pkr_Province_SelectedIndexChanged"/>
+        <Label Text="Daytime usage (KWh)" />
+        <Entry x:Name="txt_DayUsage" Placeholder="Enter the daytime usage" Keyboard="Numeric"/>
+        <Label Text="Evening usage (KWh)" />
+        <Entry x:Name="txt_NightUsage" Placeholder="Enter the evening usage" Keyboard="Numeric"/>
+
+        <StackLayout x:Name="sl_LabelSwitch">
+            <Label Text="Did you use a renewable energy source?"/>
+            <Switch x:Name="sw_ReEn" Toggled="sw_ReEn_Toggled"/>
+        </StackLayout>
+        
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,20">
+            <Button x:Name="btn_Calculate" Text="Calculate" BackgroundColor="#CDECF4" Clicked="btn_Calculate_Clicked" Padding="12,0"/>
+            <Button x:Name="btn_Reset" Text="Reset" BackgroundColor="#CDECF4" Clicked="btn_Reset_Clicked" Padding="12,0"/>
+        </StackLayout>
+        
+
+        <Label x:Name="err_UsageValues" Text="Please enter valid numbers." BackgroundColor="LightPink" Padding="12,6" TextColor="DarkRed" />
+        <Label x:Name="err_MissingValues" Text="Please no empty fields." BackgroundColor="LightPink" Padding="12,6" TextColor="DarkRed" />
+
+        
+        <Label x:Name="lbl_ChargeTitle" Text="Charge Breakdown" FontSize="Large" HorizontalOptions="Center" Margin="0,20,0,10" />
+        <Label x:Name="lbl_DaytimeCharge" Text="Daytime Usage Charges: "/>
+        <Label x:Name="lbl_EveningCharge" Text="Evening Usage Charges: "/>
+        <Label x:Name="lbl_TotalCharge" Text="Total Charges: "/>
+        <Label x:Name="lbl_SalesTax" Text="Sales Tax: "/>
+        <Label x:Name="lbl_EnvRebate" Text="Environmental Rebate: "/>
+
+        
+        <Label x:Name="lbl_Pay" Text="You Must Pay: XXXXX" Padding="12,6" TextColor="#A07418" BackgroundColor="#FAF5CE" HorizontalTextAlignment="Center" Margin="0,35,0,0"/>
+    </StackLayout>
+
+</ContentPage>
+
